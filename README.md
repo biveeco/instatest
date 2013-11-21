@@ -1,4 +1,4 @@
 instatest
 =========
 
-Test for Diversity Woman Instagram
+Test of instafeedjs
