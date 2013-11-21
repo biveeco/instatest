@@ -1,0 +1,95 @@
+/*=Typography
+================================================== */
+@heavy: 900;@extrabold: 800;@bold: 700;@semibold: 600;@medium: 500;@regular: 400;@light: 300;@thin: 200;@paper: 100;
+
+.font { font-family: 'Helvetica',  Helvetica, Verdana, Arial, sans-serif; }
+.heading { .font; }
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 { 
+	.heading;
+	line-height: 1.2em;
+}
+
+h1, a h1, h1 a {
+	font-weight: @bold;
+	font-size: 2.2em;
+	text-align: center;
+	color: @asphalt;
+}
+h2, a h2, h2 a  {
+	font-weight: @bold;
+	font-size: 2.0em;
+}
+h3, a h3, h3 a  {
+	font-weight: @regular;
+	font-size: 1.8em;
+}
+h4, a h4, h4 a  {
+	font-weight: @light;
+	font-size: 1.6em;
+}
+h5, a h5, h5 a  {
+	font-weight: @light;
+	font-size: 1.4em;
+}
+h6, a h6, h6 a  {
+	font-weight: @light;
+	font-size: 1.2em;
+}
+
+/* Paragraph Styles */
+p, span {
+	.font;
+	font-weight: @light;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+
+/* Link Styles */
+a {
+	text-decoration: none;
+	font-weight: @light;
+	cursor: pointer;
+}
+  
+
+/*=Icons
+================================================== */
+.font-import('icomoon');
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+	content: "\e605";
+}
+.icon-google-plus:before {
+	content: "\e606";
+}
+.icon-bubble:before {
+	content: "\e600";
+}
+.icon-heart:before {
+	content: "\e604";
+}
+.icon-facebook:before {
+	content: "\e607";
+}
+.icon-pinterest:before {
+	content: "\e60b";
+}
+.icon-linkedin:before {
+	content: "\e60a";
+}

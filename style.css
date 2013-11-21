@@ -1,0 +1,415 @@
+/* ================================================= */
+/* STYLESHEET FOR WWW.BIVEE.CO
+/*
+/* Site Version: 	2.0
+/* Revision:		0.1 (beta)
+/*
+/* Author:			Bivee LLC
+/*
+/* ================================================= */
+/* Reset
+================================================== */
+@viewport {
+  width: device-width;
+}
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+html,
+body {
+  font-family: 'Helvetica', Helvetica, Verdana, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html {
+  overflow-y: scroll;
+}
+::selection {
+  background: #f19e95;
+}
+::-moz-selection {
+  background: #f19e95;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+header,
+nav,
+section,
+footer {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover {
+  cursor: pointer;
+}
+a:focus {
+  outline: none;
+}
+hr {
+  height: 1px;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+/*=Typography
+================================================== */
+.font {
+  font-family: 'Helvetica', Helvetica, Verdana, Arial, sans-serif;
+}
+.heading {
+  font-family: 'Helvetica', Helvetica, Verdana, Arial, sans-serif;
+}
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica', Helvetica, Verdana, Arial, sans-serif;
+  line-height: 1.2em;
+}
+h1,
+a h1,
+h1 a {
+  font-weight: 700;
+  font-size: 2.2em;
+  text-align: center;
+  color: #2a303c;
+}
+h2,
+a h2,
+h2 a {
+  font-weight: 700;
+  font-size: 2.0em;
+}
+h3,
+a h3,
+h3 a {
+  font-weight: 400;
+  font-size: 1.8em;
+}
+h4,
+a h4,
+h4 a {
+  font-weight: 300;
+  font-size: 1.6em;
+}
+h5,
+a h5,
+h5 a {
+  font-weight: 300;
+  font-size: 1.4em;
+}
+h6,
+a h6,
+h6 a {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+/* Paragraph Styles */
+p,
+span {
+  font-family: 'Helvetica', Helvetica, Verdana, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+/* Link Styles */
+a {
+  text-decoration: none;
+  font-weight: 300;
+  cursor: pointer;
+}
+/*=Icons
+================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoonicomoon.eot');
+  src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf') format('truetype'), url('fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-twitter:before {
+  content: "\e605";
+}
+.icon-google-plus:before {
+  content: "\e606";
+}
+.icon-bubble:before {
+  content: "\e600";
+}
+.icon-heart:before {
+  content: "\e604";
+}
+.icon-facebook:before {
+  content: "\e607";
+}
+.icon-pinterest:before {
+  content: "\e60b";
+}
+.icon-linkedin:before {
+  content: "\e60a";
+}
+/* ================================================= */
+/* MAIN SITE FORMATTING                              */
+/* ================================================= */
+h3 {
+  color: #ff4000;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 10px;
+  border-bottom: 1px dotted #89949b;
+}
+.instagallery {
+  list-style: none;
+  text-align: center;
+  clear: both;
+}
+.instagallery li {
+  display: inline-block;
+  text-align: left;
+  max-width: 300px;
+  margin: 10px;
+  padding: 0;
+  position: relative;
+  vertical-align: top;
+  background: #f0585c;
+}
+.instagallery li:hover .share-instafeed {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  right: 0;
+  left: auto;
+}
+.instagallery li figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px #cccccc;
+  -moz-box-shadow: 0 0 5px #cccccc;
+  box-shadow: 0 0 5px #cccccc;
+}
+.instagallery li figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+.instagallery li figcaption {
+  overflow: hidden;
+  position: relative;
+  top: auto;
+  bottom: 0;
+  padding: 10px;
+  background: #e6e6e6;
+  color: #89949b;
+  height: 40px;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 2px #cccccc;
+  -moz-box-shadow: 0 2px 2px #cccccc;
+  box-shadow: 0 2px 2px #cccccc;
+}
+.instagallery li figcaption i.icon-bubble,
+.instagallery li figcaption i.icon-heart {
+  color: #ced3d5;
+}
+.instagallery li figcaption span {
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+/*=Sharing
+================================================== */
+.share-instafeed {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  left: 100%;
+  display: block;
+  width: 100%;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.share-instafeed a {
+  color: #ffffff;
+  font-weight: 300;
+  display: inline-block;
+  height: 40px;
+  padding: 10px;
+  text-align: left;
+}
+.share-instafeed a i {
+  font-size: 100%;
+}
+.share-instafeed a.fb {
+  background: #3b5998;
+}
+.share-instafeed a.fb:hover {
+  background: #4c70ba;
+}
+.share-instafeed a.tw {
+  background: #4099ff;
+}
+.share-instafeed a.tw:hover {
+  background: #73b4ff;
+}
+.share-instafeed a.gp {
+  background: #d34836;
+}
+.share-instafeed a.gp:hover {
+  background: #dc6e60;
+}
+.share-instafeed a.in {
+  background: #007bb6;
+}
+.share-instafeed a.in:hover {
+  background: #009de9;
+}
+.share-instafeed a.pn {
+  background: #c92228;
+}
+.share-instafeed a.pn:hover {
+  background: #df3f45;
+}
+/* JS is disabled
+================================================== */
+/* ================================================= */
+/* NO TOUCH STYLES                                   */
+/* ================================================= */
+/*=Image Grid
+================================================== */
+/* ================================================= */
+/* SECTION SPECIFIC STYLES                           */
+/* ================================================= */
+/*=Intro
+================================================== */

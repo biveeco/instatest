@@ -1,0 +1,123 @@
+/* ================================================= */
+/* MAIN SITE FORMATTING                              */
+/* ================================================= */
+
+h3 {
+  color: #ff4000;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 10px;
+  border-bottom: 1px dotted @grey;
+}
+.instagallery {
+  list-style: none;
+  text-align: center;
+  clear: both;
+  li {
+    display: inline-block;
+    text-align: left;
+    max-width: 300px;
+    margin: 10px;
+    padding: 0;
+    position: relative;
+    vertical-align: top;
+    background: @red;
+    &:hover .share-instafeed {
+      .transition;
+      right: 0;
+      left: auto;
+
+    }
+    figure {
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+      .box-shadow(0,0,5px,darken(@offwhite,10%));
+      img {
+        max-width: 100%;
+        display: block;
+        position: relative;
+
+      }
+    }
+    figcaption {
+      overflow: hidden;
+      position: relative;
+      top: auto;
+      bottom: 0;
+      padding: 10px;
+      background: @offwhite;
+      color: @grey;
+      height: 40px;
+      width: 100%;
+      .box-shadow(0,2px,2px,darken(@offwhite,10%));
+      i {
+        &.icon-bubble, &.icon-heart {
+          color: lighten(@grey,25%);
+        }
+      }
+      span {
+        padding-left: 0.5em;
+        padding-right: 1em;
+      }
+    }
+    &:hover img {
+    }
+  }
+}
+
+
+/*=Sharing
+================================================== */
+
+.share-instafeed {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  left: 100%;
+  display: block;
+  width: 100%;
+  .transition;
+  a {
+    color: @white;
+    font-weight: @light;
+    display: inline-block;
+    height: 40px;
+    padding: 10px;
+    text-align: left;
+    i {
+      font-size: 100%;
+
+    }
+    &.fb {
+      background: @facebook;
+      &:hover {
+        background: lighten(@facebook, 10%);
+      }
+    }
+    &.tw {
+      background: @twitter;
+      &:hover {
+        background: lighten(@twitter, 10%);
+      }
+    }
+    &.gp {
+      background: @google;
+      &:hover {
+        background: lighten(@google, 10%);
+      }
+    }
+    &.in {
+      background: @linkedin;
+      &:hover {
+        background: lighten(@linkedin, 10%);
+      }
+    }
+    &.pn {
+      background: @pinterest;
+      &:hover {
+        background: lighten(@pinterest, 10%);
+      }
+    }
+  }
+}

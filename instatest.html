@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <title>Instatest</title>
+  
+  <!-- // Site Info
+  ====================================
+  
+  Version:
+  
+  Launch:     
+  Updated:    
+  
+  Author:
+  
+  Notes:
+  
+  ====================================
+  // -->
+  
+  <!-- CSS and Fonts  -->
+  <link rel="stylesheet" media="screen" href="style.css">
+  <script src="instafeed.min.js"></script>
+
+
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get:          'tagged',
+        tagName:      'awesome',
+        clientId:     '26e6a45259a048d6a77217c8c44991f9',
+        template:     '<li><a href="{{link}}" alt="{{caption}}"><figure><img src="{{image}}" title="{{caption}}" /></figure></a><figcaption><i class="icon-heart"></i><span>{{likes}}</span><i class="icon-bubble"></i><span>{{comments}}</span><div class="share-instafeed"><a href="" class="fb"><i class="icon-facebook"></i></a><a href="" class="tw"><i class="icon-twitter"></i></a><a href="" class="gp"><i class="icon-google-plus"></i></a><a href="" class="in"><i class="icon-linkedin"></i></a><a href="" class="pn"><i class="icon-pinterest"></i></a></div></figcaption></li>',
+        resolution:   'low_resolution',
+        limit:        60, 
+    });
+    feed.run();
+  </script>
+
+</head>
+<body>
+
+  <h3>Photos from #awesome</h3>
+  <ul id="instafeed" class="instagallery"></ul>
+
+</body>
+</html>
